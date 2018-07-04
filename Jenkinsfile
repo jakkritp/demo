@@ -1,7 +1,7 @@
 pipeline {
     agent none
     environment {
-        imageName = 'jakkritp/demo'
+        imageName = 'lafong/demo'
         port = 80
     }
     
@@ -10,7 +10,7 @@ pipeline {
           agent any
           steps {
               sh "docker --version"
-              sh "docker build -t ${env.imageName} ."
+              sh "docker build -t sommaik/demo ."
           }
        }
 
